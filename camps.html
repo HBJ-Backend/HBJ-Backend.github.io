@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Course Details - Mentor Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="course-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img style="width: 160px; height: 90px; " src="assets/img/MC_Logo_sqr.jpg" alt="">
+        <!-- <h1 class="sitename"><img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in"></h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <script>
+          function activateTab(id) {
+            const element = document.getElementById(id);  // Get the DIV element
+            element.classList.add("active"); // Add newone class to DIV
+          }
+        </script>
+        <ul>
+          
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="javascript:history.back()">Back</a>
+
+    </div>
+  </header>
+
+
+  <main class="main">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <!-- Navigation Arrows -->
+      
+      <img class="" src="assets/img/camp_group_1_crop.jpg" alt="" >
+    
+      <div class="container">
+        <!-- <h2  data-aos-delay="100">Towards a Computational <br/>Future </h2> -->
+        <h2  data-aos-delay="100">MindCraft </br> Camps</h2>
+
+        <p  data-aos-delay="200"></p>
+        <div class="d-flex mt-4"  data-aos-delay="300">
+          <a  href="https://hbjcenter.qatar.cmu.edu/courses.html" target = "_blank" class="btn-get-started">Register</a>
+        </div>
+      </div>
+    
+    
+            
+    </section>
+
+    <!-- Courses Course Details Section -->
+    <section id="courses-course-details" class="courses-course-details section">
+      <div class="container section-title" >
+        <p>About</p>
+        <h2>Mindcraft Camps</h2>
+
+      </div><!-- End Section Title -->
+      <div class="container" >
+
+        <div class="row">
+            <p style = "text-indent: 3.0em;">
+              Explore cutting-edge topics in Computer Science! Looking for a hands-on opportunity to gain real-world skills? MindCraft camps offer an immersive experience where participants dive deep into a computer science topic, acquire specific skills, and apply their knowledge to real-life scenarios. Our camps are project-driven, allowing students to create fully functioning projects, whether it's a simple tic-tac-toe game or a complex traffic sign detection system. 
+              There's a great sense of accomplishment when students see their own creations solving real challenges. Learn more about the exciting projects students develop at each camp below.
+
+              <ul id="extra_content" class="fst-italic extra_content" style = "margin-left: 20px">
+                <li>Practice concepts by developing you own solutions to a given set of problems.</li>
+                <li>Build your own project and get the opportunity to put together everything you learnt.</span>
+                </li>
+                <li>18 hours conducted over one week or several weeks.</li>
+                <li>Catering to different age groups & offering various fun activitie.s</span>
+                </li>
+                
+              </ul>
+
+            </p>
+            
+        </div>
+        <button id="read_more" class="read_more">Show More</button>
+
+
+      </div>
+      <script>
+        document.getElementById("read_more").addEventListener( 'click' , changeClass);
+        function changeClass() {
+          var content = document.getElementById("extra_content");
+          var btn = document.getElementById("read_more");
+          content.classList.toggle('show');
+
+          if (content.classList.contains("show")) {
+              btn.innerHTML = "Show Less";
+          } else {
+              btn.innerHTML = "Show More";
+          }
+        }
+      </script>
+    </section><!-- /Courses Course Details Section -->
+
+    <section id="counts" class="section counts ">
+              
+      <div class="container "  data-aos-delay="100" style="margin-top: -70px;">
+
+        <div class="row gy-4" style="justify-content: center;">
+          
+          <div class="col-lg-4 col-md-3" >
+            <div class="stats-item text-center w-100 h-100">
+              <h4>Over</h4>
+              <span style = "margin-top: -10px" data-purecounter-start="0" data-purecounter-end="400" data-purecounter-duration="2" class="purecounter"></span>
+              <h4>Applicants</h4>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-4 col-md-3">
+            <div class="stats-item text-center w-100 h-100">
+              <h4>More than</h4>
+              <span style = "margin-top: -10px" data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1" class="purecounter"></span>
+              <h4>Attendees</h4>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-4 col-md-3">
+            <div class="stats-item text-center w-100 h-100">
+              <h4>More than</h4>
+              <span style = "margin-top: -10px" data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
+              <h4>Schools</h4>
+            </div>
+          </div><!-- End Stats Item -->
+
+   
+        </div>
+
+      </div>
+    
+     
+    </section><!-- /Counts Section -->
+    <!-- Events Section -->
+    <section id="events" class="events section">
+      <div class="container section-title">
+
+        <p>Camps</p>
+        <h2>Dive into the world of CS</h2>
+
+      </div><!-- End Section Title -->
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch">
+            <a href="javascript:void(0);" onclick="showDetails('programming')" id = "camp" class="custom-button">
+              Programming
+            </a>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch">
+            <a href="javascript:void(0);" onclick="showDetails('CT')" id = "camp" class="custom-button">
+              Computational Thinking
+            </a>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch">
+            <a href="javascript:void(0);" onclick="showDetails('cyber')" id = "camp" class="custom-button">
+              Cybercamp
+            </a>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch">
+            <a href="javascript:void(0);" onclick="showDetails('AI')"id = "camp" class="custom-button">
+              Artificial Intelligence
+            </a>
+          </div>  
+        </div>
+      </div>
+      <!-- Dynamic Detail Sections -->
+      <div id="programming" class="event-details hidden container w3-animate-opacity">
+        <!-- <div style="text-align: right; margin-right: 2%;">
+          <button class="close-btn" onclick="hideDetails('programming')">&times;</button>
+        </div> -->
+        <section id="about" class="about section">
+          <div class="container">
+            <div class="row gy-4">
+              
+              <div class="col-lg-6 order-1 order-lg-1">
+                <!-- Carousel Wrapper -->
+                <div id="carouselPythonIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPythonIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselPythonIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselPythonIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img  src="assets/img/AI_camp_event.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/camp_activity_1.JPG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/python_camp.JPG" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselPythonIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselPythonIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="col-lg-6 order-2 order-lg-2 content"  data-aos-delay="200">
+                <h3>Programming</h3>
+                <p class="fst-italic">
+                  Who said learning how to code is boring or difficult? In our camps we take the participants in a rich hands-on experience where they learn how to program and build their own project. The camps allow participants to learn the syntax and context of the language using the simplest and most effective methods.
+                  We don’t stop at teaching the concept, participants will also reflect everything they learn on day-to-day applications. We currently have two camps:
+                </p>
+                <div class="row">
+                  <!-- Camp 1 Column -->
+                  <div class="col-lg-6">
+                    <h4>Camp 1</h4>
+                    <ul>
+                      <li><b>Name:</b> Intro to Python </li>
+                      <li><b>Project:</b> Tic-Tac-Toe</li>
+                    </ul>
+                  </div>
+                  
+                  <!-- Camp 2 Column -->
+                  <div class="col-lg-6">
+                    <h4 >Camp 2</h4>
+                    <ul >
+                      <li><b>Name:</b> Intermediate Python</li>
+                      <li><b>Project:</b> Traffic Violation System</li>
+                    </ul>
+                  </div>
+                </div>
+
+                 <!-- Register Button -->
+                
+              </div>
+      
+            </div>
+          </div>
+        </section>
+      </div>
+      
+
+      <!-- Dynamic Detail Sections -->
+      <div id="CT" class="event-details hidden container w3-animate-opacity">
+        <!-- <div style="text-align: right; margin-right: 2%;">
+          <button class="close-btn" onclick="hideDetails('programming')">&times;</button>
+        </div> -->
+        <section id="about" class="about section">
+          <div class="container">
+            <div class="row gy-4">
+              
+              <div class="col-lg-6 order-1 order-lg-1">
+                <!-- Carousel Wrapper -->
+                <div id="carouselCTIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCTIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCTIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCTIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img  src="assets/img/robomind_camp.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/summer_camp_1.JPG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/robomind_camp_2.JPG" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselCTIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselCTIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="col-lg-6 order-2 order-lg-2 content"  data-aos-delay="200">
+                <h3>Computational Thinking</h3>
+                <p class="fst-italic">
+                 
+                  Designed for anyone with an interest to learn programming but doesn’t know where to start. We use an interactive tool that simplifies text-based programming allowing participants to grasp the concepts without worrying about the syntax. 
+                  Participant apply all what they learn on real life scenarios such as vacuum cleaners and warehouse management.
+                </p>
+                <div class="row">
+                  <!-- Camp 1 Column -->
+                  <div class="col-lg-6">
+                    <h4>Camp 1</h4>
+                    <ul>
+                      <li><b>Name:</b> RoboMind Beginners: </li>
+                      <li><b>Project:</b> Warehouse Management</li>
+                    </ul>
+                  </div>
+                  
+                  <!-- Camp 2 Column -->
+                  <div class="col-lg-6">
+                    <h4 >Camp 2</h4>
+                    <ul >
+                      <li><b>Name:</b> RoboMind Intermediate</li>
+                      <li><b>Project:</b> Search and Rescue</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                 <!-- Register Button -->
+                
+              </div>
+      
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Dynamic Detail Sections -->
+      <div id="cyber" class="event-details hidden container w3-animate-opacity">
+        <!-- <div style="text-align: right; margin-right: 2%;">
+          <button class="close-btn" onclick="hideDetails('programming')">&times;</button>
+        </div> -->
+        <section id="about" class="about section">
+          <div class="container">
+            <div class="row gy-4">
+              
+              <div class="col-lg-6 order-1 order-lg-1">
+                <!-- Carousel Wrapper -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img  src="assets/img/hacker.png" class="d-block w-100" alt="...">
+                    </div>
+                    
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="col-lg-6 order-2 order-lg-2 content"  data-aos-delay="200">
+                <h3>Cybersecurity Camp</h3>
+                <p class="fst-italic">
+                  Dive into the world of cybersecurity with our hands-on camp designed for aspiring digital defenders. Learn the fundamentals of cryptography and master command line tools to uncover hidden digital flags.
+                  This camp offers an exciting blend of theory and practice, empowering students to safeguard data and navigate the complexities of the cyber world. Perfect for those eager to explore the techniques used by security professionals, this camp is your gateway to a future in cybersecurity.
+                </p>
+                <div class="row"></div>
+                  <!-- Camp 1 Column -->
+                  <div class="col-lg-6">
+                    <h4>Camp 1</h4>
+                    <ul>
+                      <li><b>Name:</b> Cybersecurity Camp </li>
+                      <li><b>Project:</b>  CTF Challenges</li>
+                    </ul>
+                  </div>
+
+                </div>
+
+              </div>
+      
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="AI" class="event-details hidden container w3-animate-opacity">
+        <!-- <div style="text-align: right; margin-right: 2%;">
+          <button class="close-btn" onclick="hideDetails('programming')">&times;</button>
+        </div> -->
+        <section id="about" class="about section">
+          <div class="container">
+            <div class="row gy-4">
+              
+              <div class="col-lg-6 order-1 order-lg-1">
+                <!-- Carousel Wrapper -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                 
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img   src="assets/img/brain_AI.png" class="d-block w-100" alt="...">
+                    </div>
+                    
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="col-lg-6 order-2 order-lg-2 content"  data-aos-delay="200">
+                <h3>Artificial Intelligence</h3>
+                <p class="fst-italic">
+                  Embark on an exciting journey into the world of Artificial Intelligence with our immersive AI camps. 
+                  Designed for curious minds, this camp introduces students to the core concepts of AI, including machine learning, neural networks, and data analysis. 
+                  Through interactive projects and hands-on activities, participants will learn how to create intelligent systems that can solve real-world problems. 
+                  
+                </p>
+                <div class="row">
+                  <!-- Camp 1 Column -->
+                  <div class="col-lg-6">
+                    <h4>Camp 1</h4>
+                    <ul>
+                      <li><b>Name:</b> AI:Vision </li>
+                      <li><b>Project:</b> Traffic Sign Detection</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <h4>Camp 2</h4>
+                    <ul>
+                      <li><b>Name:</b> AI:Language </li>
+                      <li><b>Project:</b> Sentiment Analysis</li>
+                    </ul>
+                  </div>
+                 
+                </div>
+                
+                
+              </div>
+      
+            </div>
+          </div>
+        </section>
+      </div>
+    <script>
+      function showDetails(sectionId) {
+      // Hide all event detail sections
+      const details = document.querySelectorAll('.event-details');
+      const button = document.getElementById('camp');
+      button.classList.add('active')
+
+      details.forEach(detail => {
+        detail.classList.remove('visible');
+        detail.classList.add('hidden');
+        
+      });
+
+      // Show the selected section with animation
+      const selectedSection = document.getElementById(sectionId);
+      if (selectedSection) {
+        selectedSection.classList.remove('hidden');
+        selectedSection.classList.add('visible');
+      }
+      }
+      
+      document.addEventListener("DOMContentLoaded", function() {
+          const buttons = document.querySelectorAll('.custom-button');
+          const closeButton = document.getElementById('close-btn');
+
+          buttons.forEach(button => {
+              button.addEventListener('click', function() {
+                  // Remove active class from all buttons
+                  buttons.forEach(btn => btn.classList.remove('active'));
+
+                  // Add active class to the clicked button
+                  this.classList.add('active');
+               
+              });
+          });
+
+      });
+      showDetails('programming')
+
+    </script>
+    </section><!-- /Events Section -->
+    
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">MindCraft</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Carnegie Mellon University in Qatar</p>
+            <p>Education City</p>
+            <p>PO Box 24866</p>
+            <p>Doha, Qatar</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+974 44548400</span></p>
+            <p><strong>Email:</strong> <span>mindcraft@andrew.cmu.edu</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="col-lg-4 col-md-6 footer-map">
+          <h4>Location</h4>
+          <div style="overflow:hidden;resize:none;max-width:100%;width:300px;height:200px;"><div id="my-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=cmu+qatar&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googlecoder" href="https://www.bootstrapskins.com/themes" id="make-map-infor-mation">premium bootstrap themes</a><style></style></div>
+        </div>
+  
+        <!-- Big Quote with Motto -->
+        <div class="col-lg-4 col-md-6 footer-motto">
+          <blockquote class="blockquote text-center">
+            <h2 class="mb-0" style="padding-top: 80px; "><i class="bi bi-quote quote-icon-left"></i>
+                    <i>Dedicated to promoting computational thinking
+                    </i>
+                    <i class="bi bi-quote quote-icon-right"></i></h2>
+                    <footer class="blockquote-footer mt-3">HBJ Center</footer>
+
+          </blockquote>
+        </div>
+
+        <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Stay Up to Date</h4>
+          <p>Subscribe to our mailing list in order to recieve updates about any of our events!</p>
+          <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+          
+        </div> -->
+
+       
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Mindcraft 2024</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

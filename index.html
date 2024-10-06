@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Mentor Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/w3.css" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: Mentor
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+  
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img style="width: 160px; height: 90px; " src="assets/img/MC_Logo_sqr.jpg" alt="">
+        <!-- <h1 class="sitename"><img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in"></h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <script>
+          function activateTab(id) {
+            const element = document.getElementById(id);  // Get the DIV element
+            element.classList.add("active"); // Add newone class to DIV
+          }
+        </script>
+        <ul>
+          <!-- <li><a href="index.html" class="active">Home<br></a></li> -->
+          <li ><a id = "about_title"  href="#about">About</a></li>
+          <li><a id = "projects" href="#courses">Programs</a></li>
+          <li><a id = "news_title" href="#news">News</a></li>
+          <li><a id = "test_title" href="#testimonials">Reviews</a></li>
+          <li><a id = "sponser_title" href="#sponsers">Sponsors</a></li>
+          <li><a id = "contact" href="#footer">Contact</a></li>
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <script>
+        // JavaScript to add 'active' class based on scroll position
+        document.addEventListener('scroll', function() {
+          const sections = document.querySelectorAll('section, .footer');
+          const navLinks = document.querySelectorAll('.navmenu ul li a');
+
+          let currentSectionId = '';
+
+          sections.forEach(section => {
+              const sectionTop = section.offsetTop;
+              const sectionHeight = section.clientHeight;
+
+              if (pageYOffset >= sectionTop - (sectionHeight+120)) {
+                  currentSectionId = section.getAttribute('id');
+              }
+          });
+
+          navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href').includes(currentSectionId)) {
+                  link.classList.add('active');
+              }
+          });
+      });
+      </script>
+
+      <a class="btn-getstarted" href="https://hbjcenter.qatar.cmu.edu/courses.html" target = "_blank">Register</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <!-- Navigation Arrows -->
+      
+      <img class="mySlides w3-animate-fading" src="assets/img/group_photo.jpg" alt="" data-aos="fade-in">
+      <img class="mySlides w3-animate-fading" src="assets/img/Mindcraft_Alpha_crop.JPG" alt="" data-aos="fade-in">
+      <img class="mySlides w3-animate-fading" src="assets/img/AI_camp_event.jpg" alt="" data-aos="fade-in">
+      <img class="mySlides w3-animate-fading" src="assets/img/mindcraft_camp_group.jpeg" alt="" data-aos="fade-in">
+      <img class="mySlides w3-animate-fading" src="assets/img/alpha_event.jpg" alt="" data-aos="fade-in">
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      <div class="container">
+        <!-- <h2  data-aos-delay="100">Towards a Computational <br/>Future </h2> -->
+        <h2  data-aos-delay="100">Computer Science <br/>Starts Here </h2>
+
+        <p  data-aos-delay="200"></p>
+        <div class="d-flex mt-4"  data-aos-delay="300">
+          <a  href="https://hbjcenter.qatar.cmu.edu/courses.html" class="btn-get-started">Register</a>
+        </div>
+      </div>
+     
+      <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1}
+          x[slideIndex-1].style.display = "block";
+          setTimeout(carousel, 10000); // Change image every 2 seconds
+        }
+        
+        function changeSlide(n) {
+          var x = document.getElementsByClassName("mySlides");
+          slideIndex += n;
+          if (slideIndex > x.length) {slideIndex = 1}
+          if (slideIndex < 1) {slideIndex = x.length}
+          for (var i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+          }
+          x[slideIndex-1].style.display = "block";
+        }
+      </script>
+     
+            
+  </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container section-title"  data-aos-delay="0">
+        <p>About</p>
+        <h2>Who we are</h2>
+      </div><!-- End Section Title -->
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <!-- <div class="col-lg-12  order-lg-2"  data-aos-delay="100">
+            <img src="assets/img/mindcraft_camp_group.jpeg" class="img-fluid" style="width: 100%;padding-top: 30px;" alt="">
+          </div> -->
+          
+          <div class="col-lg-12 order-lg-1 content"  data-aos-delay="200"  data-aos-anchor-placement="top-bottom">
+            <!-- <h3>Mindcraft</h3>
+            <p class="fst-italic">
+              Computer Science Starts Here
+            </p> -->
+            <p style = "text-indent: 3.0em;">
+              MindCraft is an outreach program for Computer Science that was launched in September 2016 with a mission to inspire and educate the next generation of tech innovators. The main goal of the program is to raise awareness about Computer Science (CS) and its profound importance in today's world. At Carnegie Mellon University, we believe in ideas that change the world, and we see CS as a superpower that can transform your ideas into reality.
+
+              In an era where emerging technologies are rapidly evolving, and the demand for innovative solutions is ever-increasing, CS has become the driving force behind industry transformation. </p>
+            <p id="extra_content" class="extra_content">
+              MindCraft was born out of the belief that everyone should have the opportunity to experience the power of Computer Science—it's not just about coding; it's about gaining the tools to create, innovate, and lead in a tech-driven future.
+
+              Through hands-on workshops, engaging in-depth camps, and collaborative ondemand projects, MindCraft offers students of all ages a chance to explore the limitless possibilities of CS. Whether you're new to the field or looking to deepen your understanding, our program is designed to ignite curiosity, foster creativity, and empower participants to take control of technology. Join us on this journey and discover how you can harness the power of Computer Science to make a lasting impact on the world.
+            
+              Know more about us through our numbers:
+            </p>
+            <button id="read_more" class="read_more">Show More</button>
+
+            <!-- <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
+          </div>
+          <script>
+            document.getElementById("read_more").addEventListener( 'click' , changeClass);
+            function changeClass() {
+              var content = document.getElementById("extra_content");
+              var btn = document.getElementById("read_more");
+              content.classList.toggle('show');
+    
+              if (content.classList.contains("show")) {
+                  btn.innerHTML = "Show Less";
+              } else {
+                  btn.innerHTML = "Show More";
+              }
+            }
+          </script>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Counts Section -->
+    <section id="counts" class="section counts">
+      <!-- Section Title -->
+      <!-- <div class="container section-title"   data-aos-anchor-placement="top-bottom">
+        <h2>Statistics</h2>
+        <p>Our Numbers</p>
+      </div>End Section Title -->
+      <div class="container "  data-aos-delay="100"  data-aos-anchor-placement="top-bottom">
+
+        <div class="row gy-4" style="justify-content: center;">
+          
+          <div class="col-lg-3 col-md-3" >
+            <div class="stats-item text-center w-100 h-100">
+              <p>Over</p>
+              <span data-purecounter-start="0" data-purecounter-end="16400" data-purecounter-duration="2" class="purecounter"></span>
+              <p>Students</p>
+              <p>from different MindCraft events and workshops</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-3">
+            <div class="stats-item text-center w-100 h-100">
+              <p>More than</p>
+              <span data-purecounter-start="0" data-purecounter-end="80" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Events</p>
+              <p>in and out of CMUQ campus and for different age groups</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-3">
+            <div class="stats-item text-center w-100 h-100">
+              <p>More than</p>
+              <span data-purecounter-start="0" data-purecounter-end="70" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Schools</p>
+              <p>from all across Qatar</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Counts Section -->
+
+   
+   
+    <!-- Courses Section -->
+    <section id="courses" class="courses section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title"    data-aos-anchor-placement="top-bottom">
+        <p>Programs</p>
+        <h2>What we offer</h2>
+
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos-anchor-placement="top-bottom">
+            <a href="alpha.html" >
+              <div class="course-item">
+                <div style="display: flex;">
+                  <img src="assets/img/MC_Workshops.jpg" class="img-fluid" style="flex: 1; width: auto; height: auto; " alt="...">
+                </div>
+                <div class="course-content">
+      
+
+                  <h3><a href="alpha.html" >MindCraft Alpha</a></h3>
+                  <!-- <p class="description">One day workshops about Computer Science</p> -->
+                  
+                </div>
+              </a>
+            </div>
+          </div> <!-- End Course Item-->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"    data-aos-anchor-placement="top-bottom">
+            <a href="camps.html" >
+              <div class="course-item">
+                <div style="display: flex;">
+                  <img src="assets/img/MC_camps_crop.jpg" class="img-fluid" style="flex: 1;width: auto; height: auto; " alt="...">
+                </div>
+                <div class="course-content">
+                
+                  <h3><a href="camps.html">MindCraft Camps</a></h3>
+                  <!-- <p class="description">Intensive camps that dive deep into CS fields</p> -->
+                  
+                </div>
+              </div>
+            </a>
+          </div> <!-- End Course Item-->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"   data-aos-anchor-placement="top-bottom">
+            <a href="ondemand.html" >
+              <div class="course-item">
+                <div style="display: flex;">
+                  <img src="assets/img/news-1.jpg" class="img-fluid" style="flex:1; width: auto; height: auto; " alt="...">
+                </div>
+                <div class="course-content">
+                  <h3><a href="ondemand.html">MindCraft OnDemand</a></h3>
+                  <!-- <p class="description">On-demand events to cater to different audiences. </p> -->
+                </div>
+              </div>
+            </a>
+          </div> <!-- End Course Item-->
+          
+          
+        </div>
+
+      </div>
+
+    </section><!-- /Courses Section -->
+
+    <!-- News Section -->
+    <section id="news" class="news section">
+
+      <!-- Section Title -->
+      <div class="container section-title"    data-aos-anchor-placement="top-bottom">
+        <p>News</p>
+        <h2>Read about us</h2>
+
+      </div><!-- End Section Title -->
+
+      <div class="container"  data-aos-delay="100"   data-aos-anchor-placement="top-bottom">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 3000,
+              "autoplay": {
+                "delay": 6000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "900": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 5
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 5
+                },
+                "1300": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 5
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="news-wrap">
+                <div class="news-item">
+                  <span>
+                    <a href="https://thepeninsulaqatar.com/article/25/06/2024/hamad-bin-jassim-center-for-computer-science-education-organises-9th-annual-alice-programming-competition" target="_blank">
+                     <center> <img  src="assets/img/news-11.jpg" class="news-image" alt=""></center>
+                    </a>  
+                  </span>
+                  <div class="resources-detail">
+                    <h3><a href="https://thepeninsulaqatar.com/article/25/06/2024/hamad-bin-jassim-center-for-computer-science-education-organises-9th-annual-alice-programming-competition" target="_blank">Hamad Bin Jassim Center for Computer Science Education organises 9th annual Alice Programming Competition</h3>
+                    <p>June 25, 2024</p></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End news item -->
+            <div class="swiper-slide">
+              <div class="news-wrap">
+                <div class="news-item">
+                  <span>
+                    <a href="https://www.cmu.edu/mcs/news-events/2024/0307_cmuq-hackathon.html" target="_blank">
+                     <center> <img  src="assets/img/lifelines_group.jfif" class="news-image" alt=""></center>
+                    </a>  
+                  </span>
+                  <div class="resources-detail">
+                    <h3><a href="https://www.cmu.edu/mcs/news-events/2024/0307_cmuq-hackathon.html" target="_blank">Carnegie Mellon Qatar LifeLines Hackathon Fosters Ethical Innovation</h3>
+                    <p>March 07, 2024</p></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End news item -->
+            <div class="swiper-slide">
+              <div class="news-wrap">
+                <div class="news-item">
+                  <span>
+                    <a href="https://www.qatar-tribune.com/article/73592/nation/cmu-q-launches-computer-science-summer-camps" target="_blank">
+                     <center> <img  src="assets/img/news-9.jpg" class="news-image" alt=""></center>
+                    </a>  
+                  </span>
+                  <div class="resources-detail">
+                    <h3><a href="https://www.qatar-tribune.com/article/73592/nation/cmu-q-launches-computer-science-summer-camps" target="_blank">CMU-Q launches computer science summer camps</h3>
+                    <p>July 13, 2023</p></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End news item -->
+
+            <div class="swiper-slide">
+              <div class="news-wrap">
+                <div class="news-item">
+                  <span>
+                    <a href="https://thepeninsulaqatar.com/article/04/06/2022/cmu-qs-mindcraft-program-introduces-computer-science-to-over-11000-students-in-qatar" target="_blank">
+                     <center> <img  src="assets/img/Mindcraft_Alpha_crop.JPG" class="news-image" alt=""></center>
+                    </a>  
+                  </span>
+                  <div class="resources-detail">
+                    <h3><a href="https://thepeninsulaqatar.com/article/04/06/2022/cmu-qs-mindcraft-program-introduces-computer-science-to-over-11000-students-in-qatar" target="_blank">CMU-Q’s MindCraft program introduces computer science to over 11,000 students in Qatar</h3>
+                    <p>June 4, 2022</p></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End news item -->
+
+            <div class="swiper-slide">
+              <div class="news-wrap">
+                <div class="news-item">
+                  <span>
+                    <a href="https://www.gulf-times.com/story/718445/CMU-Q-s-MindCraft-introduces-computer-science-to-more-than-11-000-students" target="_blank">
+                     <center> <img  src="assets/img/ondemand_page.jpg" class="news-image" alt=""></center>
+                    </a>  
+                  </span>
+                  <div class="resources-detail">
+                    <h3><a href="https://www.gulf-times.com/story/718445/CMU-Q-s-MindCraft-introduces-computer-science-to-more-than-11-000-students" target="_blank">CMU-Q's MindCraft introduces computer science to more than 11,000 students</h3>
+                    <p>June 3, 2022</p></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End news item -->
+           
+            <div class="swiper-slide">
+              <div class="news-wrap">
+                <div class="news-item">
+                  <span>
+                    <a href="https://thepeninsulaqatar.com/article/30/06/2020/Carnegie-Mellon-Qatar-launches-virtual-computer-science-discovery-workshop" target="_blank">
+                     <center> <img  src="assets/img/news-10.jpg" class="news-image" alt=""></center>
+                    </a>  
+                  </span>
+                  <div class="resources-detail">
+                    <h3><a href="https://thepeninsulaqatar.com/article/30/06/2020/Carnegie-Mellon-Qatar-launches-virtual-computer-science-discovery-workshop" target="_blank">Carnegie Mellon Qatar launches virtual computer science discovery workshop</h3>
+                    <p>June 30, 2020</p></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End news item -->
+
+            <div class="swiper-slide">
+              <div class="news-wrap">
+                <div class="news-item">
+                  <span>
+                    <a href="https://www.pressreader.com/qatar/qatar-tribune/20200630/281681142152646" target="_blank">
+                     <center> <img  src="assets/img/news-8.jpg" class="news-image" alt=""></center>
+                    </a>  
+                  </span>
+                  <div class="resources-detail">
+                    <h3><a href="https://www.pressreader.com/qatar/qatar-tribune/20200630/281681142152646" target="_blank">CMU-Q launches virtual outreach programme for high school students</h3>
+                    <p>July 1, 2020</p></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End news item -->
+
+            <div class="swiper-slide">
+              <div class="news-wrap">
+                <div class="news-item">
+                  <div class="resources-image" style="padding: 0px">
+                    <a href="https://www.gulf-times.com/story/666890/CMU-Q-launches-virtual-computer-science-discovery-workshop" target="_blank">
+                      <center> <img src="assets/img/news-7.jpg"  class="img-responsive news-image" alt=""></center>
+                    </a>
+                  </div>
+
+                  <div class="resources-detail">
+                      <h3><a href="https://www.gulf-times.com/story/666890/CMU-Q-launches-virtual-computer-science-discovery-workshop" target="_blank">CMU-Q launches virtual computer science discovery workshop</h3>
+                      <p>June 29, 2020</p></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End news item -->
+
+            <div class="swiper-slide">
+              <div class="news-wrap">
+                <div class="news-item">
+                  <div class="resources-top">
+                    <div class="resources-image" style="padding: 0px">
+                         <a href="https://www.qatar.cmu.edu/news/national-science-research-week/?fbclid=IwAR1_jM2MFjUPDvwnN1W_YYn90YAcUpTe-4JqZkYgRIepeLUp5MPjf5di8WA" target="_blank">
+                              <center><img src="assets/img/news-1.jpg" class="img-responsive news-image" alt="" target="_blank"></center>
+                         </a>
+                    </div>
+
+                  </div>
+
+                  <div class="resources-detail">
+                        <h3><a href="https://www.qatar.cmu.edu/news/national-science-research-week/?fbclid=IwAR1_jM2MFjUPDvwnN1W_YYn90YAcUpTe-4JqZkYgRIepeLUp5MPjf5di8WA" target="_blank">
+                        CMU-Q showcases MindCraft Junior and Alice Midde East at National Science Research Week</h3>
+                        <p>March 31, 2019</p></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End news item -->
+            
+            <div class="swiper-slide">
+              <div class="news-wrap">
+                <div class="news-item">
+                  <div class="resources-top">
+                      <div class="resources-image" style="padding: 0px">
+                            <a href="https://m.gulf-times.com/story/619589/CMU-Q-Jassim-Foundation-team-up-to-instill-computing-skills-in-children" target="_blank">
+                              <center>  <img src="assets/img/news-2.jpg" class="img-responsive news-image" alt=""></a> </center> 
+                            </a>
+                      </div>
+
+                  </div>
+
+                  <div class="resources-detail">
+                        <h3><a href="https://m.gulf-times.com/story/619589/CMU-Q-Jassim-Foundation-team-up-to-instill-computing-skills-in-children" target="_blank">Thousands of students in Qatar are learning about computing through the partnership between CMUQ and HBJ Foundation</h3>
+                        <p>January 18, 2019 </p></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End news item -->
+           
+            <div class="swiper-slide">
+              <div class="news-wrap">
+                <div class="news-item">
+                  <div class="resources-top">
+                    <div class="resources-image">
+                      <a href="https://www.wgoqatar.com/2018/04/hamad-bin-jassim-center-to-promote-computer-science-education-in-schools/" target="_blank">
+                        <center> <img  src="assets/img/news-4.jpg" class="img-responsive news-image" alt=""></a></center> 
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="resources-detail">
+                      <h3><a href="https://www.wgoqatar.com/2018/04/hamad-bin-jassim-center-to-promote-computer-science-education-in-schools/" target="_blank">CMUQ and the Jassim & Hamad Bin Jassim Charitable Foundation signed MoU to create the HBJ Center for K-12 CS Education</h3>
+                      <p>April 24, 2018</p></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End News item -->
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /News Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title"  data-aos-anchor-placement="top-bottom">
+        <p>Reviews</p>
+        <h2>what people say about us</h2>
+
+      </div><!-- End Section Title -->
+
+      <div class="container"  data-aos-delay="100"   data-aos-anchor-placement="top-bottom">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 5
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>The International School of Choueifat</h3>
+                  <h4>Student</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Great place. Great teachers. Great activities. I loved the whole experience, and I look forward for more.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>Sherborne School in Qatar</h3>
+                  <h4>Student</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>This workshop was an eye-opening experience and definitely opened my eyes to the world of computers.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>The International School of Choueifat</h3>
+                  <h4>Student</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>First, can i come again :) Second, could  you add a workshop for building our own robots
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>M.E.S Indian School</h3>
+                  <h4>Student</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>I seriously loved the workshop it was fun and it was........more than amazing. I would definetly join more events.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>Qatar Academy - Sidra</h3>
+                  <h4>Student</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>I enjoyed MindCraft a lot. It was really informative and fun, and met new friends. I will definitely go next year inshallah.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>Omar bin Al-Khattab Complex</h3>
+                  <h4>Student</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span> My name is Ahmed Wael. I really enjoyed the day . I would like to join CMUQ in the near future
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>The Cambridge International School</h3>
+                  <h4>Student</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span> The robotics workshop was amazing, while the Computational Thinking was more challanging.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>Al Khor International School</h3>
+                  <h4>Student</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span> It was an awesome experience, and the volunteers were a great help. Thank you. I hope to come here once again. Especially the treasure hunt was really great.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>DPS Modern Indian School</h3>
+                  <h4>Student</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span> It was soo much fun and the workshop helped me cover the basics in robotics using python and the computational thinking was also fun.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>Arab International Academy</h3>
+                  <h4>Student</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span> This was a valuable experience that enabled us to understand the importance of computer science and how it is important in our daily life .
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>Park House English School</h3>
+                  <h4>Student</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span> Loved everything. I enjoyed the topics we learned today. But I would love more hardware building courses.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>GEMS American Academy</h3>
+                  <h4>Student</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span> Enjoyable. Beneficial. Awesome...would DEFINETLY recommend to others.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>Pakistan International School Qatar</h3>
+                  <h4>Student</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span> CMUQ has been extremely insightful on CS and has helped me with my knowledge on CS.
+                    </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+    
+    
+    
+    <section id="sponsers" class="section trainers">
+      <div class="container section-title" >
+        <p>Sponsors</p>
+        <h2>With the support of</h2>
+
+      </div><!-- End Section Title -->
+      <div class="container">
+        <!-- Section Title -->
+        
+        <div class="row gy-5">
+
+          <div class="col-lg-3 col-md-6 member" >
+            <div class="member-img">
+              <a href="#" target="_blank">
+                <img src="assets/img/HBJLogo_sponsor.jpg" class="img-fluid" alt="">
+              </a>   
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 member" >
+            <div class="member-img">
+              <a href="https://www.boeing.com/" target="_blank">
+                <img src="assets/img/boeing.jpg" class="img-fluid" alt="">
+              </a>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 member">
+            <div class="member-img">
+              <a href="https://www.qatar.cmu.edu/" target="_blank">
+                <img src="assets/img/CMUQ_stack.jpg" class="img-fluid" alt="">
+              </a>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 member">
+            <div class="member-img">
+              <a href="https://www.qf.org.qa/" target="_blank">
+                <img src="assets/img/QF_Logo.jpg" class="img-fluid" alt="">
+              </a>
+            </div>
+          </div><!-- End Team Member -->
+        </div>
+
+      </div>
+
+    </section><!-- /Trainers Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">MindCraft</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Carnegie Mellon University in Qatar</p>
+            <p>Education City</p>
+            <p>PO Box 24866</p>
+            <p>Doha, Qatar</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+974 44548400</span></p>
+            <p><strong>Email:</strong> <span>mindcraft@andrew.cmu.edu</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="col-lg-4 col-md-6 footer-map">
+          <h4>Location</h4>
+          <div style="overflow:hidden;resize:none;max-width:100%;width:300px;height:200px;"><div id="my-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=cmu+qatar&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googlecoder" href="https://www.bootstrapskins.com/themes" id="make-map-infor-mation">premium bootstrap themes</a><style></style></div>
+        </div>
+  
+        <!-- Big Quote with Motto -->
+        <div class="col-lg-4 col-md-6 footer-motto">
+          <blockquote class="blockquote text-center">
+            <h2 class="mb-0" style="padding-top: 80px; "><i class="bi bi-quote quote-icon-left"></i>
+                    <i>Dedicated to promoting computational thinking
+                    </i>
+                    <i class="bi bi-quote quote-icon-right"></i></h2>
+                    <footer class="blockquote-footer mt-3">HBJ Center</footer>
+
+          </blockquote>
+        </div>
+
+        <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Stay Up to Date</h4>
+          <p>Subscribe to our mailing list in order to recieve updates about any of our events!</p>
+          <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+          
+        </div> -->
+
+       
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Mindcraft 2024</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
