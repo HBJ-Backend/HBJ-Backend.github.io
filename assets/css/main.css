@@ -2890,9 +2890,59 @@ section,
   /* background: rgba(8, 108, 141, 0.5); */
 }
 
+
 .social-icons a {
   margin: 0 20px; /* Increase margin for more separation */
-  font-size: 24px; /* Increase font size for bigger icons */
+  font-size: 20px; /* Increase font size for bigger icons */
   text-decoration: none;
   transition: color 0.3s;
+}
+
+.floating-sidebar {
+  position: fixed;
+  top: 17%;
+  right: 0;
+  transform: translateY(-50%);
+  background: rgba(63, 151, 246, .6); /* Transparent background */
+  padding: 10px;
+  border-radius: 10px 0 0 10px; /* Adjust border-radius for right side */
+  z-index: 1000; /* Ensure it appears above other elements */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.floating-sidebar a {
+  color: #fff;
+  margin: 10px 0;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.floating-sidebar a:hover {
+  color: #007bff;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .floating-sidebar {
+    top: 40%;
+  }
+
+  .floating-sidebar a {
+    font-size: 20px;
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .floating-sidebar {
+    top: 30%;
+  }
+
+  .floating-sidebar a {
+    font-size: 18px;
+    margin: 6px 0;
+  }
 }
